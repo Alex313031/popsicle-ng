@@ -1,18 +1,18 @@
 [package]
 name = "popsicle_cli"
 description = "USB Flasher"
-version = "1.3.0"
-authors = ["Jeremy Soller <jeremy@system76.com>"]
+version = "1.3.1"
+authors = [ "Jeremy Soller <jeremy@system76.com>", "Alexander Frick <alex313031@gmail.com>" ]
 license = "MIT"
 readme = "README.md"
-edition = "2018"
+edition = "2021"
 
 [[bin]]
 name = "popsicle"
 path = "src/main.rs"
 
 [dependencies]
-anyhow = "1.0.65"
+anyhow = "1.0.69"
 async-std = "1.12.0"
 atty = "0.2.14"
 better-panic = "0.3.0"
@@ -20,10 +20,11 @@ cascade = "1.0.1"
 clap = "4.0.8"
 derive-new = "0.5.9"
 fomat-macros = "0.3.1"
-futures = "0.3.24"
+futures = "0.3.26"
+futures_codec = "0.4.1"
 i18n-embed = { version = "0.13.4", features = ["fluent-system", "desktop-requester"] }
 i18n-embed-fl = "0.6.4"
-libc = "0.2.134"
+libc = "0.2.139"
 once_cell = "1.15.0"
 pbr = "1.0.4"
 popsicle = { path = ".." }
