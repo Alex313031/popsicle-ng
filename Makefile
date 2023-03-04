@@ -1,4 +1,4 @@
-default_prefix = ./out/
+default_prefix = /usr/local
 prefix ?= $(default_prefix)
 exec_prefix = $(prefix)
 bindir = $(exec_prefix)/bin
