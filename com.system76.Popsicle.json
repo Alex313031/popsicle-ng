@@ -18,13 +18,13 @@
         "--socket=wayland",
         "--system-talk-name=org.freedesktop.UDisks2"
     ],
-    "command" : "popsicle-gtk",
+    "command" : "popsicle-ng-gtk",
     "cleanup" : [
         "/share/icons/hicolor/512x512@2x"
     ],
     "modules" : [
         {
-            "name" : "popsicle",
+            "name" : "popsicle-ng",
             "buildsystem" : "simple",
             "sources" : [
                 {

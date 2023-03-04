@@ -8,7 +8,7 @@ arg-image = IMAGE
 arg-image-desc = Input image file
 
 arg-disks = DISKS
-arg-disks-desc = Output disk devices
+arg-disks-desc = Output disk device(s)
 
 arg-all-desc = Flash all detected USB drives
 arg-check-desc = Check if written image matches source image

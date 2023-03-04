@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: popsicle
-Source: https://github.com/pop-os/popsicle
+Upstream-Name: popsicle-ng
+Source: https://github.com/Alex313031/popsicle-ng
 
 Files: *
-Copyright: Copyright 2017 System76
+Copyright: Copyright 2023 System76 & Alex313031
 License: MIT
