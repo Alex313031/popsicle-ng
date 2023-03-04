@@ -35,7 +35,7 @@ impl App {
             if let Some(uri) = data.text() {
                 if uri.starts_with("file://") {
                     let path = Path::new(&uri[7..uri.len() - 1]);
-                    if path.extension().map_or(false, |ext| ext == "iso" || ext == "img")
+                    if path.extension().map_or(false, |ext| ext == "iso" || ext == "img" || ext == "bin")
                         && path.exists()
                     {
                         let _ = state.ui_event_tx.send(UiEvent::SetImageLabel(path.to_path_buf()));

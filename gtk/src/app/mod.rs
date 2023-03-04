@@ -23,7 +23,7 @@ pub struct App {
 impl App {
     pub fn new(state: State) -> Self {
         if gtk::init().is_err() {
-            eprintln!("failed to initialize GTK Application");
+            eprintln!("Failed to initialize GTK Application");
             process::exit(1);
         }
 
@@ -66,9 +66,9 @@ impl GtkUi {
             // Set the headerbar as the title bar widget.
             ..set_titlebar(Some(&header.container));
             // Set the title of the window.
-            ..set_title("Popsicle");
+            ..set_title("Popsicle-ng");
             // The default size of the window to create.
-            ..set_default_size(500, 250);
+            ..set_default_size(512, 256);
             ..add(&content.container);
         };
 

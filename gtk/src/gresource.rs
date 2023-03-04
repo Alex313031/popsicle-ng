@@ -7,6 +7,7 @@ pub fn init() -> Result<(), glib::Error> {
 
     let theme = gtk::IconTheme::default().unwrap();
     theme.add_resource_path("/org/Pop-OS/Popsicle");
+    theme.append_search_path("/org/Pop-OS/Popsicle");
 
     Ok(())
 }

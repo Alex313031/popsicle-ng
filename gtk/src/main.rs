@@ -27,10 +27,10 @@ fn main() {
 
     gtk::init().unwrap();
 
-    gresource::init().expect("failed to init popsicle gresource");
+    gresource::init().expect("Failed to init popsicle gresource");
 
-    glib::set_program_name("Popsicle".into());
-    glib::set_application_name("Popsicle");
+    glib::set_program_name("Popsicle-ng".into());
+    glib::set_application_name("Popsicle-ng");
 
     let app = App::new(State::new());
 
@@ -38,7 +38,7 @@ fn main() {
         let path = PathBuf::from(iso_argument);
         if path.extension().map_or(false, |ext| {
             let lower_ext = ext.to_str().expect("Could not convert CStr to Str").to_lowercase();
-            lower_ext == "iso" || lower_ext == "img"
+            lower_ext == "iso" || lower_ext == "img" || lower_ext == "bin"
         }) && path.exists()
         {
             let _ = app.state.ui_event_tx.send(UiEvent::SetImageLabel(path));

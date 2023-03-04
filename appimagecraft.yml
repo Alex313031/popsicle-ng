@@ -1,7 +1,7 @@
 version: 1
 
 project:
-  name: com.github.pop-os.popsicle
+  name: com.github.pop-os.popsicle-ng
   version_command: git describe --tags
 
 build:
@@ -15,11 +15,11 @@ build:
 scripts:
   post_build:
     # just USB Flasher might make sense on Pop!_OS, but not on other distros
-    - sed -i 's|Name=USB Flasher|Name=Popsicle USB Flasher|' "$BUILD_DIR"/AppDir/usr/share/applications/com.system76.Popsicle.desktop
+    - printf "Done!"
 
 appimage:
   linuxdeploy:
     environment:
-      UPD_INFO: 'gh-releases-zsync|pop-os|popsicle|latest|Popsicle_USB_Flasher-*x86_64.AppImage.zsync'
+      UPD_INFO: 'gh-releases-zsync|pop-os|popsicle|latest|Popsicle_ng_USB_Flasher-*x86_64.AppImage.zsync'
     plugins:
       - gtk

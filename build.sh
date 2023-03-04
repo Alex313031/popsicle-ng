@@ -38,7 +38,7 @@ esac
 
 # Install build dependencies
 installDeps () {
-	sudo apt install libclang1 libdbus-1-dev libgtk-3-dev libudev-dev cargo
+	sudo apt install cargo help2man libclang1 libclang-dev libdbus-1-dev libgtk-3-dev libudev-dev patchelf
 }
 
 case $1 in

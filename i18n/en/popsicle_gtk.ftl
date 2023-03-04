@@ -6,7 +6,7 @@ check-label = Check
 choose-image-button = Choose Image
 generating-checksum = Generating Checksum
 hash-label = Hash:
-image-view-description = Select the .iso or .img that you want to flash. You can also plug your USB drives in now.
+image-view-description = Select the .iso, .img, or .bin that you want to flash. You can also plug your USB drives in now.
 image-view-title = Choose an Image
 no-image-selected = No image selected
 none = None
@@ -19,7 +19,7 @@ devices-view-title = Select Drives
 select-all = Select all
 
 # Flashing View
-flash-view-description = Do not unplug devices while they are being flashed.
+flash-view-description = Do not unplug devices while they are being flashed!
 flash-view-title = Flashing Devices
 
 # Summary View

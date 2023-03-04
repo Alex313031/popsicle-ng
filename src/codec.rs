@@ -6,9 +6,9 @@ use std::{io, path::PathBuf};
 /// Errors that may occur when decoding the IPC stream.
 #[derive(Debug, Error)]
 pub enum Error {
-    #[error("failed to decode popsicle message: {{\n  {}\n}}", input)]
+    #[error("Failed to decode popsicle-ng message: {{\n  {}\n}}", input)]
     Decode { input: Box<str>, source: ron::de::SpannedError },
-    #[error("reading from popsicle stream failed")]
+    #[error("Reading from popsicle-ng stream failed")]
     Read(#[from] io::Error),
 }
 

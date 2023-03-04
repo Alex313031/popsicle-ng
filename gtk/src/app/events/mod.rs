@@ -71,7 +71,7 @@ pub fn background_thread(events_tx: Sender<UiEvent>, events_rx: Receiver<Backgro
                                 let _ = events_tx.send(UiEvent::RefreshDevices(devices));
                             }
                         }
-                        Err(why) => eprintln!("failed to refresh devices: {}", why),
+                        Err(why) => eprintln!("Failed to refresh devices: {}", why),
                     }
                 }
                 Ok(BackgroundEvent::Flash(request)) => {
