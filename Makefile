@@ -33,15 +33,21 @@ APPDATA=$(APPID).appdata.xml
 DESKTOP=$(APPID).desktop
 GTK_BIN=popsicle-gtk
 ICONS=\
-	512x512/apps/$(APPID).png \
-	16x16@2x/apps/$(APPID).png \
-	32x32@2x/apps/$(APPID).png \
-	32x32/apps/$(APPID).png \
-	48x48@2x/apps/$(APPID).png \
-	24x24/apps/$(APPID).png \
-	48x48/apps/$(APPID).png \
 	16x16/apps/$(APPID).png \
+	16x16@2x/apps/$(APPID).png \
+	24x24/apps/$(APPID).png \
 	24x24@2x/apps/$(APPID).png \
+	32x32/apps/$(APPID).png \
+	32x32@2x/apps/$(APPID).png \
+	48x48/apps/$(APPID).png \
+	48x48@2x/apps/$(APPID).png \
+	64x64/apps/$(APPID).png \
+	64x64@2x/apps/$(APPID).png \
+	128x128/apps/$(APPID).png \
+	128x128@2x/apps/$(APPID).png \
+	256x256/apps/$(APPID).png \
+	256x256@2x/apps/$(APPID).png \
+	512x512/apps/$(APPID).png \
 	512x512@2x/apps/$(APPID).png
 
 all: cli gtk

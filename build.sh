@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Copyright (c) 2022 Alex313031.
+# Copyright (c) 2023 Alex313031.
 
 YEL='\033[1;33m' # Yellow
 CYA='\033[1;96m' # Cyan
@@ -163,6 +163,8 @@ installPopsicle () {
 printf "${YEL}Installing Popsicle...\n" &&
 printf "${c0}\n" &&
 
+mkdir -p out &&
+
 export NINJA_SUMMARIZE_BUILD=1 &&
 export VERBOSE=1 &&
 export V=1 &&
@@ -189,6 +191,8 @@ installPopsicleCLI () {
 printf "${YEL}Installing Popsicle CLI...\n" &&
 printf "${c0}\n" &&
 
+mkdir -p out &&
+
 export NINJA_SUMMARIZE_BUILD=1 &&
 export VERBOSE=1 &&
 export V=1 &&
@@ -214,6 +218,8 @@ esac
 installPopsicleGTK () {
 printf "${YEL}Installing Popsicle GUI...\n" &&
 printf "${c0}\n" &&
+
+mkdir -p out &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
 export VERBOSE=1 &&
@@ -253,6 +259,8 @@ export RUSTFLAGS="-Copt-level=3 -Ctarget-feature=+avx,+aes -Clink-arg=-Wl,-O3 -C
 export RUSTC_LOG="rustc_codegen_ssa::back::link=info"
 
 make uninstall VERBOSE=1 V=1 &&
+
+rm -r -f ./out/* &&
 
 printf "\n" &&
 printf "${GRE}${bold}Done.\n" &&
