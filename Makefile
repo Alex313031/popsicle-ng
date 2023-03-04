@@ -1,4 +1,4 @@
-default_prefix = /usr/local
+default_prefix = ./out/
 prefix ?= $(default_prefix)
 exec_prefix = $(prefix)
 bindir = $(exec_prefix)/bin
@@ -101,10 +101,10 @@ ifeq ($(VENDORED),1)
 endif
 
 $(TARGET)/$(BIN): extract
-	cargo build --manifest-path cli/Cargo.toml $(ARGS)
+	cargo build --verbose --manifest-path cli/Cargo.toml $(ARGS)
 
 $(TARGET)/$(GTK_BIN): extract
-	cargo build --manifest-path gtk/Cargo.toml $(ARGS)
+	cargo build --verbose --manifest-path gtk/Cargo.toml $(ARGS)
 
 $(TARGET)/$(BIN).1.gz: $(TARGET)/$(BIN)
 	help2man --no-info $< | gzip -c > $@.partial
