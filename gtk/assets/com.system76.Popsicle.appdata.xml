@@ -49,7 +49,7 @@
     </mimetypes>
     <binaries>
       <binary>popsicle-ng-gtk</binary>
-      <binary>popsicle-ng</binary>
+      <binary>popsicle-ng-cli</binary>
     </binaries>
   </provides>
   <project_group>Pop!_OS</project_group>

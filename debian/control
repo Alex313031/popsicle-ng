@@ -11,7 +11,7 @@ Build-Depends:
 Standards-Version: 4.1.1
 Homepage: https://github.com/Alex313031/popsicle-ng
 
-Package: popsicle-cli
+Package: popsicle-ng-cli
 Architecture: amd64 arm64
 Depends:
   ${misc:Depends},

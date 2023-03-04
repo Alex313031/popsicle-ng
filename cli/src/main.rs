@@ -303,6 +303,6 @@ fn translate() {
     let localizer = crate::localize::localizer();
 
     if let Err(error) = localizer.select(&requested_languages) {
-        eprintln!("Error while loading languages for popsicle-cli {}", error);
+        eprintln!("Error while loading languages for popsicle-ng-cli {}", error);
     }
 }

@@ -18,7 +18,7 @@ try() { "$@" || die "${RED}Failed $*"; }
 # --help
 displayHelp () {
 	printf "\n" &&
-	printf "${bold}${GRE}Script to build Popsicle on Linux.${c0}\n" &&
+	printf "${bold}${GRE}Script to build Popsicle-ng on Linux.${c0}\n" &&
 	printf "${YEL}Use the --deps flags to install build dependencies.\n" &&
 	printf "${YEL}Use the --clean flag to \`run make clean\` and \`make distclean\`\n" &&
 	printf "${YEL}Use the --cli flag to only build the CLI binary.\n" &&
@@ -54,9 +54,9 @@ case $1 in
 	--clean) makeClean; exit 0;;
 esac
 
-# Build Popsicle
+# Build Popsicle-ng
 buildPopsicle () {
-printf "${YEL}Building popsicle-cli and popsicle-gtk...\n" &&
+printf "${YEL}Building popsicle-ng-cli and popsicle-ng-gtk...\n" &&
 printf "${c0}\n" &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
@@ -80,9 +80,9 @@ case $1 in
 	--build) buildPopsicle; exit 0;;
 esac
 
-# Build Popsicle cli
+# Build Popsicle-ng cli
 buildPopsicleCLI () {
-printf "${YEL}Building popsicle-cli (Command Line Version)...\n" &&
+printf "${YEL}Building popsicle-ng-cli (Command Line Version)...\n" &&
 printf "${c0}\n" &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
@@ -106,9 +106,9 @@ case $1 in
 	--cli) buildPopsicleCLI; exit 0;;
 esac
 
-# Build Popsicle gui
+# Build Popsicle-ng gui
 buildPopsicleGTK () {
-printf "${YEL}Building popsicle-gtk (GUI Version)...\n" &&
+printf "${YEL}Building popsicle-ng-gtk (GUI Version)...\n" &&
 printf "${c0}\n" &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
@@ -132,9 +132,9 @@ case $1 in
 	--gtk) buildPopsicleGTK; exit 0;;
 esac
 
-# Build debug Popsicle
+# Build debug Popsicle-ng
 buildPopsicleDebug () {
-printf "${YEL}Building popsicle-cli and popsicle-gtk (DEBUG Version)...\n" &&
+printf "${YEL}Building popsicle-ng-cli and popsicle-ng-gtk (DEBUG Version)...\n" &&
 printf "${c0}\n" &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
@@ -160,7 +160,7 @@ esac
 
 # Install Popsicle
 installPopsicle () {
-printf "${YEL}Installing Popsicle...\n" &&
+printf "${YEL}Installing Popsicle-ng...\n" &&
 printf "${c0}\n" &&
 
 mkdir -p out &&
@@ -188,7 +188,7 @@ esac
 
 # Install Popsicle CLI
 installPopsicleCLI () {
-printf "${YEL}Installing Popsicle CLI...\n" &&
+printf "${YEL}Installing Popsicle-ng CLI...\n" &&
 printf "${c0}\n" &&
 
 mkdir -p out &&
@@ -216,7 +216,7 @@ esac
 
 # Install Popsicle GUI
 installPopsicleGTK () {
-printf "${YEL}Installing Popsicle GUI...\n" &&
+printf "${YEL}Installing Popsicle-ng GUI...\n" &&
 printf "${c0}\n" &&
 
 mkdir -p out &&
@@ -244,7 +244,7 @@ esac
 
 # Uninstall Popsicle
 uninstallPopsicle () {
-printf "${YEL}Uninstalling Popsicle...\n" &&
+printf "${YEL}Uninstalling Popsicle-ng...\n" &&
 printf "${c0}\n" &&
 
 export NINJA_SUMMARIZE_BUILD=1 &&
@@ -271,7 +271,7 @@ case $1 in
 esac
 
 printf "\n" &&
-printf "${bold}${GRE}Script to build Popsicle on Linux.${c0}\n" &&
+printf "${bold}${GRE}Script to build Popsicle-ng on Linux.${c0}\n" &&
 printf "${YEL}Use the --deps flags to install build dependencies.\n" &&
 printf "${YEL}Use the --clean flag to \`run make clean\` and \`make distclean\`\n" &&
 printf "${YEL}Use the --cli flag to only build the CLI binary.\n" &&

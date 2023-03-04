@@ -6,8 +6,8 @@ pub fn init() -> Result<(), glib::Error> {
     gio::resources_register(&gio::Resource::from_data(&glib::Bytes::from_static(GRESOURCE))?);
 
     let theme = gtk::IconTheme::default().unwrap();
-    theme.add_resource_path("/org/Pop-OS/Popsicle");
-    theme.append_search_path("/org/Pop-OS/Popsicle");
+    theme.add_resource_path("/org/Pop-OS/Popsicle-ng");
+    theme.append_search_path("/org/Pop-OS/Popsicle-ng");
 
     Ok(())
 }

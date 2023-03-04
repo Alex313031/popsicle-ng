@@ -1,4 +1,4 @@
-default_prefix = /usr/local
+default_prefix = $(HOME)/.local
 prefix ?= $(default_prefix)
 exec_prefix = $(prefix)
 bindir = $(exec_prefix)/bin
@@ -27,7 +27,7 @@ TARGET = target/$(RELEASE)
 
 .PHONY: all clean distclean install uninstall update
 
-BIN=popsicle-cli
+BIN=popsicle-ng-cli
 APPID=com.system76.Popsicle
 APPDATA=$(APPID).appdata.xml
 DESKTOP=$(APPID).desktop
@@ -48,10 +48,7 @@ ICONS=\
 	256x256/apps/$(APPID).png \
 	256x256@2x/apps/$(APPID).png \
 	512x512/apps/$(APPID).png \
-	512x512@2x/apps/$(APPID).png \
-	application-x-cd-image.png \
-	drive-removable-media-usb.png \
-	process-completed-symbolic.svg
+	512x512@2x/apps/$(APPID).png
 
 all: cli gtk
 

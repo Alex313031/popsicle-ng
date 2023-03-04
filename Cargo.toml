@@ -1,6 +1,6 @@
 [package]
-name = "popsicle-ng"
-description = "USB Flasher"
+name = "popsicle_ng"
+description = "Popsicle-ng USB Flasher"
 version = "1.3.1"
 repository = "https://github.com/Alex313031/popsicle-ng"
 authors = [
