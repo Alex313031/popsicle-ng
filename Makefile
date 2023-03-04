@@ -27,11 +27,11 @@ TARGET = target/$(RELEASE)
 
 .PHONY: all clean distclean install uninstall update
 
-BIN=popsicle
+BIN=popsicle-ng
 APPID=com.system76.Popsicle
 APPDATA=$(APPID).appdata.xml
 DESKTOP=$(APPID).desktop
-GTK_BIN=popsicle-gtk
+GTK_BIN=popsicle-ng-gtk
 ICONS=\
 	16x16/apps/$(APPID).png \
 	16x16@2x/apps/$(APPID).png \

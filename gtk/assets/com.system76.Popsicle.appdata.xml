@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2018-2019 System76 -->
+<!-- Copyright 2018-2023 System76 and Alex313031 -->
 <component type="desktop-application">
   <id>com.system76.Popsicle</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MIT</project_license>
-  <developer_name>System76</developer_name>
-  <update_contact>michael@system76.com</update_contact>
-  <url type="homepage">https://github.com/pop-os/popsicle</url>
-  <url type="bugtracker">https://github.com/pop-os/popsicle</url>
-  <name>Popsicle</name>
+  <developer_name>Alex313031</developer_name>
+  <update_contact>Alex313031@gmail.com</update_contact>
+  <url type="homepage">https://github.com/Alex313031/popsicle-ng</url>
+  <url type="bugtracker">https://github.com/Alex313031/popsicle-ng/issues</url>
+  <name>Popsicle-ng</name>
   <summary>Flash multiple USB devices in parallel</summary>
   <description>
     <p>Write an ISO or other image to multiple USB devices all at once. Easily preparing a bunch of flash drives of your favorite OS with just a couple of clicks.</p>
@@ -24,22 +24,22 @@
     <category>System</category>
   </categories>
   <launchable type="desktop-id">com.system76.Popsicle.desktop</launchable>
-  <icon type="remote" height="512" width="512">https://raw.githubusercontent.com/pop-os/popsicle/master/gtk/assets/icons/512x512/apps/com.system76.Popsicle.png</icon>
+  <icon type="remote" height="512" width="512">https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/gtk/assets/icons/512x512/apps/com.system76.Popsicle.png</icon>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/pop-os/popsicle/master/screenshots/screenshot-01.png</image>
+      <image>https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/screenshots/screenshot-01.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pop-os/popsicle/master/screenshots/screenshot-02.png</image>
+      <image>https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/screenshots/screenshot-02.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pop-os/popsicle/master/screenshots/screenshot-03.png</image>
+      <image>https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/screenshots/screenshot-03.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pop-os/popsicle/master/screenshots/screenshot-04.png</image>
+      <image>https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/screenshots/screenshot-04.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/pop-os/popsicle/master/screenshots/screenshot-05.png</image>
+      <image>https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/screenshots/screenshot-05.png</image>
     </screenshot>
   </screenshots>
   <provides>
@@ -48,13 +48,14 @@
       <mimetype>application/x-raw-disk-image</mimetype>
     </mimetypes>
     <binaries>
-      <binary>popsicle-gtk</binary>
-      <binary>popsicle</binary>
+      <binary>popsicle-ng-gtk</binary>
+      <binary>popsicle-ng</binary>
     </binaries>
   </provides>
   <project_group>Pop!_OS</project_group>
   <content_rating type="oars-1.0" />
   <releases>
+    <release version="1.3.1" date="2023-03-04" />
     <release version="1.3.0" date="2020-11-05" />
     <release version="1.2.0" date="2020-10-27" />
     <release version="1.1.0" date="2020-08-03" />

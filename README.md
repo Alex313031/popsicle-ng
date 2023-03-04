@@ -1,4 +1,4 @@
-# Popsicle-ng
+# Popsicle-ng <img src="https://raw.githubusercontent.com/Alex313031/popsicle-ng/master/Logo.png" width="64">
 
 Popsicle-ng is a Linux utility for flashing multiple USB devices in parallel, written in [Rust](https://www.rust-lang.org/en-US/).] \
 It is a fork of [Popsicle](https://github.com/pop-os/popsicle), which is made by [system76](https://system76.com/) and included in [PopOS!](https://pop.system76.com/).
