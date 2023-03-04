@@ -46,6 +46,7 @@
     <mimetypes>
       <mimetype>application/x-cd-image</mimetype>
       <mimetype>application/x-raw-disk-image</mimetype>
+      <mimetype>application/octet-stream</mimetype>
     </mimetypes>
     <binaries>
       <binary>popsicle-ng-gtk</binary>

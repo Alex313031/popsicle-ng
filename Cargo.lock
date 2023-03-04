@@ -1578,26 +1578,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "popsicle-ng"
-version = "1.3.1"
-dependencies = [
- "anyhow",
- "as-result",
- "async-std",
- "derive-new",
- "futures",
- "futures_codec",
- "libc",
- "memchr",
- "mnt",
- "ron",
- "serde",
- "srmw",
- "thiserror",
- "usb-disk-probe",
-]
-
-[[package]]
 name = "popsicle_cli"
 version = "1.3.1"
 dependencies = [
@@ -1616,7 +1596,7 @@ dependencies = [
  "libc",
  "once_cell",
  "pbr",
- "popsicle-ng",
+ "popsicle_ng",
  "rust-embed",
 ]
 
@@ -1648,12 +1628,32 @@ dependencies = [
  "md-5",
  "once_cell",
  "pango",
- "popsicle-ng",
+ "popsicle_ng",
  "pwd",
  "rust-embed",
  "sha-1",
  "sha2",
  "sys-mount",
+]
+
+[[package]]
+name = "popsicle_ng"
+version = "1.3.1"
+dependencies = [
+ "anyhow",
+ "as-result",
+ "async-std",
+ "derive-new",
+ "futures",
+ "futures_codec",
+ "libc",
+ "memchr",
+ "mnt",
+ "ron",
+ "serde",
+ "srmw",
+ "thiserror",
+ "usb-disk-probe",
 ]
 
 [[package]]

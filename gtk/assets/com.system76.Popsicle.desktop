@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Popsicle-ng USB Flasher
-Name[fr_FR]=Popsicle-ng Flasheur USB
-Name[pt_BR]=Popsicle-ng Gravador USB
+Name=Popsicle-ng
+Name[fr_FR]=Popsicle-ng
+Name[pt_BR]=Popsicle-ng
 GenericName=USB Flasher
 GenericName[fr_FR]=Flasheur USB
 GenericName[pt_BR]=Gravador USB
@@ -15,7 +15,7 @@ StartupWMClass=popsicle-ng-gtk
 Keywords="USB;Flash;Drive;Popsicle;Popsicle-ng;"
 Keywords[fr_FR]="USB;Flasheur;Lecteur;Popsicle;Popsicle-ng;"
 Keywords[pt_BR]="USB;Gravar;Pendrive;Popsicle;Popsicle-ng;"
-MimeType=application/x-cd-image;application/x-raw-disk-image;
+MimeType=application/x-cd-image;application/x-raw-disk-image;application/octet-stream;
 Terminal=false
 StartupNotify=true
 Exec=popsicle-ng-gtk %f

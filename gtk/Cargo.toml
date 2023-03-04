@@ -32,7 +32,7 @@ iso9660 = { git = "https://github.com/ids1024/iso9660-rs" }
 libc = "0.2.139"
 md-5 = "0.10.5"
 pango = "0.15.10"
-popsicle-ng = { path = ".." }
+popsicle_ng = { path = ".." }
 pwd = "1.4.0"
 sha2 = "0.10.6"
 sha-1 = { version = "0.10.1", features = ["asm"] }
